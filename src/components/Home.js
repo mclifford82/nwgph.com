@@ -10,7 +10,7 @@ export default class AddNewPost extends Component {
         <Menu fixed='top' inverted>
           <Container>
             <Menu.Item as='a' header>
-              northwestgreens
+              Martin Clifford Photography
             </Menu.Item>
             <Dropdown item simple text='Products/Services'>
               <Dropdown.Menu>
@@ -52,6 +52,7 @@ export default class AddNewPost extends Component {
                   <List>
                     <List.Item>Cured Flowers</List.Item>
                     <List.Item>Live Flower Branches</List.Item>
+                    <List.Item>Dispensary / Staff Photos</List.Item>
                   </List>
                 </Grid.Column>
                 <Grid.Column width={5}>
@@ -106,6 +107,13 @@ export default class AddNewPost extends Component {
             <div className="legend">
               <p>Quantum Kush - get the genetics</p>
               <p>Product photo for DubbleBFarmz, Washington</p>
+            </div>
+          </div>
+          <div>
+            <img src="assets/locktite_seeds.jpg" alt="Locktite F1 Seeds" />
+            <div className="legend">
+            <p>Locktite F1 Seeds</p>
+            <p>Product photo</p>
             </div>
           </div>
           <div>
