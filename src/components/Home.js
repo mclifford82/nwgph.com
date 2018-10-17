@@ -15,6 +15,7 @@ export default class AddNewPost extends Component {
             <Dropdown item simple text='Products/Services'>
               <Dropdown.Menu>
                 <Dropdown.Header>Products</Dropdown.Header>
+                <Dropdown.Item>Digital Licensing</Dropdown.Item>
                 <Dropdown.Item>Canvas Prints</Dropdown.Item>
                 <Dropdown.Item>Posters</Dropdown.Item>
                 <Dropdown.Divider />
@@ -31,9 +32,9 @@ export default class AddNewPost extends Component {
           </Container>
         </Menu>
 
-        <Segment
+        {/*<Segment
           vertical
-          style={{ margin: '3em 0em 0em', padding: '3em 0em' }}
+          style={{ margin: '0em 0em 0em', padding: '3em 0em' }}
         >
           <Container textAlign='center'>
             <Grid divided stackable>
@@ -65,9 +66,9 @@ export default class AddNewPost extends Component {
               </Grid.Row>
             </Grid>
           </Container>
-        </Segment>
+      </Segment>*/}
 
-        <Container style={{ marginTop: '3em' }}>
+        <Container style={{ marginTop: '4em' }}>
           <Carousel
             infiniteLoop
             autoPlay

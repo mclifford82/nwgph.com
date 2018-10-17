@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#keys
+publickey1.txt
+privatekey1.ppk
