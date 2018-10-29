@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const RankingListFlowerItem = (props) => {
   const itemContainer = {
     display: 'grid',
-    gridTemplateColumns: '1fr 4fr',
+    gridTemplateColumns: '100px 4fr',
     gridTemplateRows: '2fr repeat(2, 1fr)',
     alignItems: 'center',
   }
@@ -20,11 +20,11 @@ const RankingListFlowerItem = (props) => {
   }
 
   const cultivarName = {
-    fontSize: '1.7rem',
+    fontSize: '1.5rem',
     fontWeight: 800,
   }
 
-  const grower = {
+  const growerName = {
     fontStyle: 'italic',
     fontWeight: 800,
   }
@@ -40,6 +40,9 @@ const RankingListFlowerItem = (props) => {
       </div>
       <div style={cultivarName}>
         {props.data.name}
+      </div>
+      <div style={growerName}>
+        {props.data.grower}
       </div>
       <div style={shop}>
         {props.data.shop}

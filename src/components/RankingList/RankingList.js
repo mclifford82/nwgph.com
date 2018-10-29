@@ -5,16 +5,25 @@ import RankingListOilItem from './RankingListOilItem';
 const rankingListContainer = {
   padding: '5px',
   display: 'grid',
-  gridTemplateRows: '50px repeat(5, 1fr)',
+  gridTemplateRows: '50px 20px repeat(5, 1fr)',
   gridRowGap: '10px',
 }
 
 const rankingTitle = {
   textAlign: 'center',
   padding: '10px 0px',
+  margin: '0px',
   fontFamily: 'Catamaran, sans-serif',
-  fontSize: '1.5rem',
+  fontSize: '1.7rem',
+  fontWeight: 800,
+}
 
+const lastUpdatedNote = {
+  textAlign: 'center',
+  margin: '0px',
+  padding: '0px',
+  fontSize: '0.9rem',
+  color: '#8f8f8f',
 }
 
 class RankingList extends Component {
@@ -28,6 +37,9 @@ class RankingList extends Component {
       <div style={rankingListContainer}>
         <div style={rankingTitle}>
           Top {this.listLength} {this.props.title} Rankings
+        </div>
+        <div style={lastUpdatedNote}>
+          Last updated: {this.props.lastUpdated}
         </div>
         {this.props.data.map((item, index) => {
           item['ranking'] = index + 1;

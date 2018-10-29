@@ -4,7 +4,7 @@ const RankingListOilItem = (props) => {
 
   const itemContainer = {
     display: 'grid',
-    gridTemplateColumns: '1fr 4fr',
+    gridTemplateColumns: '100px 4fr',
     gridTemplateRows: '2fr repeat(2, 1fr)',
     alignItems: 'center',
   }
@@ -21,7 +21,7 @@ const RankingListOilItem = (props) => {
   }
 
   const cultivarName = {
-    fontSize: '1.7rem',
+    fontSize: '1.5rem',
     fontWeight: 800,
   }
 
@@ -43,7 +43,7 @@ const RankingListOilItem = (props) => {
         {props.data.name}
       </div>
       <div style={processor}>
-        {props.data.processor}
+        {props.data.type} by {props.data.processor}
       </div>
       <div style={shop}>
         {props.data.shop}
