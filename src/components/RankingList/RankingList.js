@@ -36,7 +36,7 @@ class RankingList extends Component {
     return (
       <div style={rankingListContainer}>
         <div style={rankingTitle}>
-          Top {this.listLength} {this.props.title} Rankings
+          {this.props.title} Rankings
         </div>
         <div style={lastUpdatedNote}>
           Last updated: {this.props.lastUpdated}
