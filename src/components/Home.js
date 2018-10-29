@@ -30,18 +30,18 @@ class Home extends Component {
     super(props);
     this.state = {
       flowerRankingList: [
-        { name: 'South Fork Kush', grower: 'Benson Elvis' },
-        { name: 'Scooby Snacks #2', grower: 'Heroes of the Farm' },
-        { name: 'Gorilla Glue #4', grower: 'Sunshine Farms' },
-        { name: 'GMO Cookies', grower: 'Resin Ranchers' },
-        { name: 'Zkittlez', grower: 'The Heights Co.' },
+        { name: 'South Fork Kush', grower: 'Benson Elvis', shop: 'Americann Rx', thc: '', cbd: '' },
+        { name: 'Scooby Snacks #2', grower: 'Heroes of the Farm', shop: 'Americann Rx', thc: '', cbd: '' },
+        { name: 'Gorilla Glue #4', grower: 'Sunshine Farms', shop: 'High End Marketplace', thc: '', cbd: '' },
+        { name: 'GMO Cookies', grower: 'Resin Ranchers', shop: 'Archive Portland', thc: '', cbd: '' },
+        { name: 'Zkittlez', grower: 'The Heights Co.', shop: 'Archive Portland', thc: '', cbd: '' },
       ],
       oilRankingList: [
-        { name: 'Cherry Limeade', type: 'BHO', processor: 'Funk Extracts', grower: undefined },
-        { name: 'Sour Diesel', type: 'BHO', processor: 'Funk Extracts', grower: undefined },
-        { name: 'Zookies', type: 'BHO', processor: 'Funk Extracts', grower: undefined },
-        { name: 'Banana Peel', type: 'BHO', processor: 'Kush Family Originals', grower: 'Kush Family Orignals' },
-        { name: 'Raspberry Creme', type: 'Hash Rosin', processor: 'Happy Cabbage', grower: 'Happy Cabbage' },
+        { name: 'Cherry Limeade', type: 'BHO', processor: 'Funk Extracts', grower: undefined, shop: 'Americann Rx', thc: '', cbd: '' },
+        { name: 'Sour Diesel', type: 'BHO', processor: 'Funk Extracts', grower: undefined, shop: 'Americann Rx', thc: '', cbd: '' },
+        { name: 'Zookies', type: 'BHO', processor: 'Funk Extracts', grower: undefined, shop: 'Americann Rx', thc: '', cbd: '' },
+        { name: 'Banana Peel', type: 'BHO', processor: 'Kush Family Originals', grower: 'Kush Family Orignals', shop: 'High End Marketplace', thc: '', cbd: '' },
+        { name: 'Raspberry Creme', type: 'Hash Rosin', processor: 'Happy Cabbage', grower: 'Happy Cabbage', shop: 'Americann Rx', thc: '', cbd: '' },
       ],
     }
   }
@@ -53,9 +53,11 @@ class Home extends Component {
         <h3 style={pageSubtitle}>The World's Most Trusted Cannabis Opinions</h3>
         <div style={rankingListContainer}>
           <RankingList
+            title={'Flower'}
             data={this.state.flowerRankingList}
           />
           <RankingList
+            title={'Concentrate'}
             data={this.state.oilRankingList}
           />
         </div>

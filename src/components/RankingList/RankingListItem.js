@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const RankingListItem = (props) => {
   return (
     <div>
-      <em>{props.name}</em>
+      <em>{props.data.name}</em>
     </div>
   )
 }
