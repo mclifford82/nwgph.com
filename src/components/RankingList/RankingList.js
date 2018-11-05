@@ -5,7 +5,7 @@ import RankingListOilItem from './RankingListOilItem';
 const rankingListContainer = {
   padding: '5px',
   display: 'grid',
-  gridTemplateRows: '50px 20px repeat(5, 1fr)',
+  gridTemplateRows: '50px repeat(5, 1fr) 20px',
   gridRowGap: '10px',
 }
 
@@ -38,15 +38,15 @@ class RankingList extends Component {
         <div style={rankingTitle}>
           {this.props.title} Rankings
         </div>
-        <div style={lastUpdatedNote}>
-          Last updated: {this.props.lastUpdated}
-        </div>
         {this.props.data.map((item, index) => {
           item['ranking'] = index + 1;
           return this.props.title === 'Flower' ?
-                <RankingListFlowerItem data={item} /> :
-                <RankingListOilItem data={item} />
+          <RankingListFlowerItem data={item} /> :
+          <RankingListOilItem data={item} />
         })}
+        <div style={lastUpdatedNote}>
+          Last updated: {this.props.lastUpdated}
+        </div>
       </div>
     )
   }

@@ -38,18 +38,18 @@ class Home extends Component {
     super(props);
     this.state = {
       flowerRankingList: [
+        { name: 'Gorilla Glue #4', grower: 'Sunshine Farms', shop: 'High End Marketplace', thc: '25.14', cbd: '0' },
+        { name: 'Han Solo Burger', grower: 'Hydrus Hydroponics', shop: 'Americanna Rx', thc: '23.10', cbd: '0.04' },
+        { name: 'Gelato Cake', grower: 'Urban Canna', shop: 'Americanna Rx', thc: '28.6', cbd: '0.1' },
         { name: 'South Fork Kush', grower: 'Benson Elvis', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Gorilla Glue #4', grower: 'Sunshine Farms', shop: 'High End Marketplace', thc: '', cbd: '' },
-        { name: 'Scooby Snacks #2', grower: 'Heroes of the Farm', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Zkittlez', grower: 'The Heights Co.', shop: 'Archive Portland', thc: '23.7%', cbd: '' },
-        { name: 'Gelato Cake', grower: 'Urban Canna', shop: 'Americanna Rx', thc: '28.6%', cbd: '0.1%' },
+        { name: 'Do-Si-Dos', grower: 'Canna Organix.', shop: 'High End Marketplace', thc: '23.2', cbd: '0.0' },
       ],
       oilRankingList: [
-        { name: 'Sour Diesel', type: 'BHO', processor: 'Funk Extracts', grower: 'Ananda Farms', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Cherry Limeade', type: 'BHO', processor: 'Funk Extracts', grower: 'OGO Pure Fire', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Zookies', type: 'BHO', processor: 'Funk Extracts', grower: 'Poseidon Element', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Banana Peel', type: 'BHO', processor: 'Kush Family Originals', grower: 'Kush Family Orignals', shop: 'High End Marketplace', thc: '', cbd: '' },
-        { name: 'Raspberry Creme', type: 'Hash Rosin', processor: 'Happy Cabbage', grower: 'Happy Cabbage', shop: 'Americanna Rx', thc: '', cbd: '' },
+        { name: 'Scott\'s OG', type: 'Live Rosin', processor: 'Nelson & Co.', grower: '', shop: 'Americanna Rx', thc: '73.84', cbd: '0.16', pricePoint: '$$' },
+        { name: 'Sour Diesel', type: 'BHO', processor: 'Funk Extracts', grower: 'Ananda Farms', shop: 'Americanna Rx', thc: '', cbd: '', pricePoint: '$$' },
+        { name: 'White Tahoe Cookies', type: 'Hash Rosin', processor: 'Happy Cabbage Farms', grower: '', shop: 'Americanna Rx', thc: '', cbd: '', pricePoint: '$$' },
+        { name: 'Cookies and Creme', type: 'Hash Rosin', processor: 'Happy Cabbage Farms', grower: '', shop: 'Americanna Rx', thc: '', cbd: '', pricePoint: '$$' },
+        { name: 'Clementine', type: 'BHO', processor: 'Willamette Valley Alchemy', grower: 'Siren Cannabis', shop: 'Americanna Rx', thc: '71.3', cbd: '0.98', pricePoint: '$' },
       ],
     }
   }
@@ -62,12 +62,12 @@ class Home extends Component {
         <div style={rankingListContainer}>
           <RankingList
             title={'Flower'}
-            lastUpdated={'10/28/2018'}
+            lastUpdated={'11/04/2018'}
             data={this.state.flowerRankingList}
           />
           <RankingList
             title={'Concentrate'}
-            lastUpdated={'10/28/2018'}
+            lastUpdated={'11/04/2018'}
             data={this.state.oilRankingList}
           />
         </div>

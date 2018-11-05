@@ -5,8 +5,9 @@ const RankingListOilItem = (props) => {
   const itemContainer = {
     display: 'grid',
     gridTemplateColumns: '100px 4fr',
-    gridTemplateRows: '2fr repeat(2, 1fr)',
+    gridTemplateRows: '1fr repeat(2, 1fr)',
     alignItems: 'center',
+    height: '80px',
   }
 
   const rankingBox = {
@@ -30,6 +31,12 @@ const RankingListOilItem = (props) => {
     fontWeight: 800,
   }
 
+  const typeName = {
+    fontSize: '0.8rem',
+    fontStyle: 'italic',
+    display: 'inline',
+  }
+
   const shop = {
  
   }
@@ -40,10 +47,10 @@ const RankingListOilItem = (props) => {
         {props.data.ranking}
       </div>
       <div style={cultivarName}>
-        {props.data.name}
+        {props.data.name} <div style={typeName}>{props.data.type}</div>
       </div>
       <div style={processor}>
-        {props.data.type} by {props.data.processor}
+        {props.data.processor} {props.data.grower && 'x ' + props.data.grower || '(single source)'}
       </div>
       <div style={shop}>
         {props.data.shop}
