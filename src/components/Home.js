@@ -42,7 +42,7 @@ class Home extends Component {
         { name: 'Han Solo Burger', grower: 'Hydrus Hydroponics', shop: 'Americanna Rx', thc: '23.10', cbd: '0.04' },
         { name: 'Gelato Cake', grower: 'Urban Canna', shop: 'Americanna Rx', thc: '28.6', cbd: '0.1' },
         { name: 'South Fork Kush', grower: 'Benson Elvis', shop: 'Americanna Rx', thc: '', cbd: '' },
-        { name: 'Do-Si-Dos', grower: 'Canna Organix.', shop: 'High End Marketplace', thc: '23.2', cbd: '0.0' },
+        { name: 'Do-Si-Dos', grower: 'Canna Organix', shop: 'High End Marketplace', thc: '23.2', cbd: '0.0' },
       ],
       oilRankingList: [
         { name: 'Scott\'s OG', type: 'Live Rosin', processor: 'Nelson & Co.', grower: '', shop: 'Americanna Rx', thc: '73.84', cbd: '0.16', pricePoint: '$$' },
