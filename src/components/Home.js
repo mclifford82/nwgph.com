@@ -1,24 +1,6 @@
 import React, { Component } from 'react';
 import RankingList from './RankingList/RankingList';
 
-const pageTitle = {
-  fontSize: '3rem',
-  color: '#4f4f4f',
-  fontFamily: 'Catamaran, sans-serif',
-  fontWeight: 800,
-  textAlign: 'center',
-  margin: '0px',
-};
-
-const pageSubtitle = {
-  color: '#8f8f8f',
-  fontSize: '1rem',
-  fontStyle: 'italic',
-  textAlign: 'center',
-  margin: '0px 0px',
-  textTransform: 'lowercase',
-}
-
 const rankingListContainer = {
   display: 'grid',
   gridTemplateColumns: 'repeat(1, 1fr)',
@@ -57,8 +39,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h1 style={pageTitle}>northwestgreens</h1>
-        <h3 style={pageSubtitle}>The World's Most Trusted Cannabis Opinion</h3>
         <div style={rankingListContainer}>
           <RankingList
             title={'Flower'}

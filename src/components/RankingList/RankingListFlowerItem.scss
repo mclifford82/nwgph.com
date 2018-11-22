@@ -1,0 +1,32 @@
+$flower-text-color: #98c377;
+$oil-text-color: #f4a460;
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 100px 4fr;
+  grid-template-rows: 2fr repeat(2, 1fr);
+  align-items: center;
+  .rankingBox {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $flower-text-color;
+    font-size: 4rem;
+    font-style: italic;
+  }
+  .cultivarName {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .growerName {
+    font-style: italic;
+    font-weight: 800;
+  }
+  .blur {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 12px rgba(0,0,0,0.5);
+  }
+}
+

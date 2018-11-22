@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const RankingListOilItem = (props) => {
 
@@ -50,7 +50,7 @@ const RankingListOilItem = (props) => {
         {props.data.name} <div style={typeName}>{props.data.type}</div>
       </div>
       <div style={processor}>
-        {props.data.processor} {props.data.grower && 'x ' + props.data.grower || '(single source)'}
+        {props.data.processor} {props.data.grower && ('x ' + props.data.grower || '(single source)')}
       </div>
       <div style={shop}>
         {props.data.shop}

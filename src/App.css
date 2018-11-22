@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  color: #4f4f4f;
+  font-family: Catamaran, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  margin: 0px;
+}
+
+.pageSubTitle {
+  color: #8f8f8f;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  text-transform: lowercase;
+}
+
+.pageTitle a {
+  color: #4f4f4f;
+}
